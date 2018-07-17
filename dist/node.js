@@ -93,7 +93,7 @@ var UITreeNode = function (_Component) {
       var nodeId = _this.props.index.id;
       var dom = _this.innerRef.current;
 
-      if (_this.props.onDragStart) {
+      if (_this.props.onDragStart && _this.props.draggable) {
         _this.props.onDragStart(nodeId, dom, e);
       }
     };

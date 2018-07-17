@@ -67,7 +67,8 @@ var UITree = function (_Component) {
           paddingLeft: this.props.paddingLeft,
           onDragStart: this.dragStart,
           onCollapse: this.toggleCollapse,
-          dragging: dragging && dragging.id
+          dragging: dragging && dragging.id,
+          draggable: this.props.draggable
         })
       );
     }
